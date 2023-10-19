@@ -1,0 +1,10 @@
+{
+    "name": "zahra-message-database",
+    "domain": false,
+    "hostname": "zahra-message-database",
+    "image": "postgres:12",
+    "env": {
+      "POSTGRES_PASSWORD": "@zahra-postgres-password"
+    },
+    "volumes": ["zahra_message_database_volume:/var/lib/postgresql/data"]
+  }
